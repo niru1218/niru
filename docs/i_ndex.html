@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>作品集</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="./jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="./jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="./jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="./jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="./jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="./jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="./jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+</head>
+
+<body>
+<h1>これは、レイアウト P タグのコンテンツです</h1>
+<p>これは、レイアウト P タグのコンテンツです</p>
+	
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+    <li><a href="#tabs-3">Tab 3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>コンテンツ 1</p>
+  </div>
+  <div id="tabs-2">
+    <p>コンテンツ 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>コンテンツ 3</p>
+  </div>
+</div>
+<p>これは、レイアウト P タグのコンテンツです</p>
+<div id="Accordion1">
+	  <h3><a href="#">セクション 1</a></h3>
+	  <div>
+	    <p>コンテンツ 1</p>
+  </div>
+	  <h3><a href="#">セクション 2</a></h3>
+	  <div>
+	    <p>コンテンツ 2</p>
+  </div>
+	  <h3><a href="#">セクション 3</a></h3>
+	  <div>
+	    <p>コンテンツ 3</p>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+</body>
+</html>
