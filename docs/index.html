@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+</head>
+	<h1>私の好きなゲーム</h1>
+<p></p>
+<body>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">APEX LEGENDS</a></li>
+    <li><a href="#tabs-2">BF1</a></li>
+    <li><a href="#tabs-3">MAINCRFT</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p></p><img src="ap.jpg">
+  </div>
+  <div id="tabs-2">
+    <p></p><img src="BF1.jfif">
+  </div>
+  <div id="tabs-3">
+    <p></p><img src="main.jfif">
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+<p>詳細</p>
+<div id="Accordion1">
+  <h3><a href="#">セクション 1</a></h3>
+  <div>
+    <p>コンテンツ 1</p>
+  </div>
+  <h3><a href="#">セクション 2</a></h3>
+  <div>
+    <p>コンテンツ 2</p>
+  </div>
+  <h3><a href="#">セクション 3</a></h3>
+  <div>
+    <p>コンテンツ 3</p>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+    </script>
+</body>
+</html>
